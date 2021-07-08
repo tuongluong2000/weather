@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1F255C"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/edittextsearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="City , State"
+            android:textColor="#EBF8F5F5"/>
+
+        <ImageButton
+            android:src="@drawable/search1"
+            android:background="#0000"
+            android:id="@+id/buttonsearch"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:scaleType="fitCenter"/>
+        <ImageButton
+            android:src="@drawable/location"
+            android:background="#0000"
+            android:id="@+id/buttonlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:textColor="#EBF8F5F5"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:text="City name"
+        android:id ="@+id/textviewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#EBF8F5F5"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:text="Country name"
+        android:id ="@+id/textviewnamecountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageicon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:textColor = "#C3331D"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="35dp"
+        android:text="Nhiet Do"
+        android:id ="@+id/textviewtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#E6DBDB"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:text="Trang Thai"
+        android:id ="@+id/textviewtrangthai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/humidity1" />
+
+            <TextView
+                android:textColor="#EBF8F5F5"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp"
+                android:text="độ ẩm"
+                android:id="@+id/textviewhumidity"
+                android:layout_width= "wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/clou1" />
+            <TextView
+                android:textColor="#EBF8F5F5"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp"
+                android:text="mây"
+                android:id="@+id/textviewclou"
+                android:layout_width= "wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/wind1" />
+            <TextView
+                android:textColor="#EBF8F5F5"
+                android:layout_marginTop="2dp"
+                android:textSize="20dp"
+                android:text="gió"
+                android:id="@+id/textviewwind"
+                android:layout_width= "wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#EBF8F5F5"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/textviewday"
+        android:text="ngày "
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/buttonnexthour"
+            android:background="#0000"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="24 giờ"
+            android:textSize="20dp"
+            android:textColor="#EBF8F5F5"/>
+
+        <Button
+            android:background="#0000"
+            android:id="@+id/buttonnextday"
+            android:textSize="20dp"
+            android:text="16 Ngày "
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#EBF8F5F5"/>
+
+    </LinearLayout>
+
+</LinearLayout>
