@@ -61,7 +61,7 @@ public class NextDayActivity extends AppCompatActivity {
 
     public void Get16DaysData(String dataLat, String dataLon)
     {
-        String url = "https://api.weatherbit.io/v2.0/forecast/daily?lat="+dataLat+"&lon="+dataLon+"&key=3be24643dedd42039b30e88b09bc5de8";
+        String url = "https://api.weatherbit.io/v2.0/forecast/daily?lat="+dataLat+"&lon="+dataLon+"&key=620ea23b751148bbaf16f3320d269e8b";
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
