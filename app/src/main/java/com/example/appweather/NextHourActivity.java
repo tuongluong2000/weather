@@ -62,7 +62,7 @@ public class NextHourActivity extends AppCompatActivity {
 
     private void Get24HoursData(String lat, String lon)
     {
-        String url = "https://api.weatherbit.io/v2.0/forecast/hourly?lat="+lat+"&lon="+lon+"&key=3be24643dedd42039b30e88b09bc5de8&hours=24";
+        String url = "https://api.weatherbit.io/v2.0/forecast/hourly?lat="+lat+"&lon="+lon+"&key=620ea23b751148bbaf16f3320d269e8b&hours=24";
         RequestQueue requestQueue = Volley.newRequestQueue(NextHourActivity.this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url ,
                 new Response.Listener<String>() {
